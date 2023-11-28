@@ -1,0 +1,118 @@
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__list {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+
+.header__list-item a {
+  color: rgba(0, 0, 0, 0.6);
+  font-family: Dongle;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.active a {
+  color: #000;
+  font-family: Dongle;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.header__wrapper img {
+  width: 95px;
+  height: 34px;
+}
+
+.header__wrapper input {
+  border-radius: 24px;
+  border: 0.5px solid rgba(0, 0, 0, 0.2);
+  background: rgba(219, 219, 219, 0.25);
+  display: flex;
+  width: 314px;
+  height: 64px;
+  padding: 10px;
+  align-items: center;
+  gap: 78px;
+  flex-shrink: 0;
+  color: rgba(0, 0, 0, 0.45);
+  font-family: Dongle;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background-image: url(../images/Icons.svg);
+  background-repeat: no-repeat;
+  background-position: center right 20px;
+}
+
+.menu {
+  height: 20px;
+  width: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  display: none;
+}
+
+.menu span {
+  width: 23px;
+  height: 2px;
+  background-color: #000;
+  border-radius: 15px;
+}
+
+#trigle {
+  visibility: hidden;
+  width: 5px;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .header__list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    width: 40%;
+    height: 100vh;
+    background-color: bisque;
+    align-items: center;
+    padding-top: 150px;
+  }
+  .menu {
+    display: flex;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .container {
+    max-width: 834px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 390px;
+    margin: 0 auto;
+  }
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,24 @@
+@import "./header";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .container {
+    max-width: 834px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width:767px) {
+    .container{
+        max-width: 390px;
+        margin: 0 auto;
+    }
+}
